@@ -199,7 +199,7 @@ html, body { height: 100%; margin: 0; font-family: 'Outfit', sans-serif; }
       <div style="width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--morado),var(--lila));display:flex;align-items:center;justify-content:center;"><i data-lucide="graduation-cap" style="width:22px;height:22px;color:white;"></i>
       </div>
       <div>
-       <h1 id="academyName" style="font-size:20px;font-weight:700;margin:0;line-height:1.2;">Calendario Creators Lab</h1>
+       <h1 id="academyName" style="font-size:20px;font-weight:700;margin:0;line-height:1.2;">Calendario Boost your Instagram</h1>
        <p id="dashboardTitle" style="font-size:12px;color:var(--text-dim);margin:0;">Boost Academy</p>
       </div>
      </div><button id="schedule-btn" onclick="openScheduleModal()" class="flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-white text-sm transition-all hover:scale-105" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4); border: none; cursor: pointer; display: flex; align-items: center; gap: 8px;"> <i data-lucide="calendar-plus" style="width:18px;height:18px;"></i> <span>Planifica tus sesiones</span> </button>
@@ -698,7 +698,8 @@ async function submitParticipation() {
       country: locationData.country,
       user_timezone: locationData.timezone,
       user_time: locationData.userTime,
-      mexico_time: mexicoTime
+      mexico_time: mexicoTime,
+      academy: 'BYI'
     };
     
     console.log('Datos de participación completos:', participationData);
